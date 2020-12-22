@@ -1,0 +1,47 @@
+.listaAgendamento {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+.listaAgendamento__item {
+  margin-bottom: 3vh;
+}
+.containerAgenda {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.containerAgenda__horario mat-icon {
+  color: var(--color-orange);
+  font-size: 1.1rem;
+}
+.containerAgenda__horario span {
+  color: var(--color-white);
+  font-size: 1rem;
+  padding-left: 5px;
+}
+/* AgendaItem */
+.agendaItem {
+  position: relative;
+  background: var(--bg-shape);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  min-height: 80px;
+}
+.agendaItem__nome {
+  font-size: 1.1rem;
+}
+.agendaItem__foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agendaItem__avatar {
+  width: 100%;
+  border-radius: 50%;
+}

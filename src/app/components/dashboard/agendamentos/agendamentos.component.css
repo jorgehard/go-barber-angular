@@ -1,0 +1,42 @@
+.agendamento {
+  padding-top: 7vh;
+  color: var(--color-white);
+}
+
+.agendamento__title span {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+.agendamento__title ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 0px;
+}
+.agendamento__title ul li {
+  padding: 0 10px;
+  line-height: 14px;
+  border-right: 0.13rem solid var(--color-orange);
+  color: var(--color-orange);
+}
+.agendamento__title ul li:nth-child(1) {
+  padding-left: 0px;
+}
+.agendamento__title ul li:nth-child(3) {
+  border: none;
+}
+.agendamento__button {
+  position: absolute;
+  top: 5px;
+  background: var(--color-orange);
+  right: 15px;
+}
+.agendamento__button mat-icon {
+  margin-right: 5px;
+}
+/* atendimento */
+.atendimento {
+  margin-top: 8vh;
+}

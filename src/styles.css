@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --bg-background: #312e38;
+  --bg-black-medium: #28262e;
+  --bg-shape: #3e3b47;
+  --bg-gray-hard: #666360;
+  --bg-gray: #999591;
+
+  --bg-input: #232129;
+
+  --color-white: #f4ede8;
+  --color-orange: #ff9000;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 90%;
+  background: var(--bg-background);
+  font-family: "Roboto Slab", sans-serif !important;
+}

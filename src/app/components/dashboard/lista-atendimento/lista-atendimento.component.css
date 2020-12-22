@@ -1,0 +1,56 @@
+.atendimento {
+  flex-direction: column;
+}
+.atendimento__title {
+  font-size: 1.2rem;
+  color: var(--bg-gray);
+}
+/* Lista */
+.lista {
+  position: relative;
+  background: var(--bg-shape);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  min-height: 100px;
+  padding: 5px 10px;
+}
+.lista::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  background: var(--color-orange);
+  border-radius: 20px;
+  width: 3px;
+  height: 70%;
+}
+.lista__nome {
+  font-size: 1.3rem;
+}
+.lista__foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lista__avatar {
+  width: 90%;
+  border-radius: 50%;
+}
+.lista__horario {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lista__horario mat-icon {
+  color: var(--color-orange);
+}
+.lista__horario span {
+  color: var(--bg-gray);
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+.proximoAtendimento {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}

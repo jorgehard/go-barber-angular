@@ -1,0 +1,93 @@
+.boxLogin {
+  background: var(--bg-background);
+  height: 100%;
+  font-size: 1.2rem;
+}
+.boxLogin__bg {
+  border: 1px solid red;
+  background: url("../../../assets/login_bg.jpg") no-repeat right 10% top 35%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* Effects */
+  mix-blend-mode: hard-light;
+  opacity: 0.7;
+  filter: grayscale(1);
+}
+/* Login */
+.login {
+  height: 100%;
+}
+.login__boxForm,
+.form,
+.form > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.login__logo {
+  width: 60%;
+}
+/* Form */
+.form__title {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  margin-top: 10vh;
+  font-weight: bold;
+}
+.form__field {
+  width: 100%;
+  font-size: 1rem;
+}
+.form__field mat-label,
+.form__field input {
+  color: var(--bg-gray-hard);
+  padding-left: 10px;
+}
+.form__field mat-icon {
+  color: var(--bg-gray-hard);
+}
+.form__button {
+  background: var(--color-orange);
+  width: 100%;
+  padding: 7px 0;
+}
+.form__remember {
+  font-size: 1rem;
+  margin-top: 3vh;
+  color: var(--color-white);
+  text-decoration: none;
+}
+.form__create {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-orange);
+  margin-top: 10vh;
+}
+.form__create > span {
+  margin-left: 10px;
+}
+::ng-deep .mat-form-field .mat-form-field-flex {
+  background-color: var(--bg-input);
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: #ff9000 !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: #ff9000 !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #ff9000 !important;
+}
