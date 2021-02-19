@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -17,6 +17,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { AgendamentosComponent } from './components/dashboard/agendamentos/agendamentos.component';
 import { ListaAtendimentoComponent } from './components/dashboard/lista-atendimento/lista-atendimento.component';
 import { ListaComponent } from './components/dashboard/lista-atendimento/lista/lista.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ListaComponent } from './components/dashboard/lista-atendimento/lista/l
     RegisterComponent,
     AgendamentosComponent,
     ListaAtendimentoComponent,
-    ListaComponent
+    ListaComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { ListaComponent } from './components/dashboard/lista-atendimento/lista/l
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

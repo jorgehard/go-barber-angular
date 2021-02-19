@@ -5,19 +5,37 @@
         <img src="assets/logo.png" class="login__logo" alt="Logo Go Barber" />
         <div class="form">
           <h2 class="form__title">Faça seu login</h2>
-          <form action="">
+          <form (ngSubmit)="onSubmit()" #form="ngForm">
             <mat-form-field appearance="fill" class="form__field">
               <mat-label>Email</mat-label>
               <mat-icon matPrefix>person</mat-icon>
-              <input type="email" name="email" matInput />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                [(ngModel)]="login.email"
+                matInput
+              />
             </mat-form-field>
             <mat-form-field appearance="fill" class="form__field">
               <mat-icon matPrefix>vpn_key</mat-icon>
               <mat-label>Senha</mat-label>
-              <input type="password" name="password" matInput />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                [(ngModel)]="login.password"
+                matInput
+              />
             </mat-form-field>
           </form>
-          <button mat-raised-button class="form__button" (click)="login()">
+          <button
+            type="submit"
+            mat-raised-button
+            (click)="onSubmit()"
+            class="form__button"
+            [disabled]="form.form.invalid"
+          >
             Entrar
           </button>
           <a href="#" class="form__remember">Esqueci minha senha</a>
